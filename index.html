@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="icon" href="img/icons8-book-100.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Rich Dad Poor Dad” is a 1997 book written by Robert T. Kiyosaki and Sharon Lechter. It advocates the
+                importance of financial literacy, financial independence, and building wealth through investing in
+                assets, real estate, and businesses. The book contrasts the financial mindsets of two father figures in
+                Kiyosaki’s life: his “rich dad,” who accumulated wealth through entrepreneurship and savvy investing,
+                and his “poor dad,” who worked hard but never achieved financial security</p>
+            <button onclick="deletebook(event)">Delete</button>
+
+        </div>
+    </div>
+    <div class="popup-overlay">
+    </div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book title" id="book-title-input">
+            <input type="text" placeholder="Book Authore" id="book-authore-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <button id="add-book" >ADD</button>
+            <BUtton id="popup-cancel">CANCEL</BUtton>
+        </form>
+    </div>
+
+    <button class="add-btn" id="add-popup-btn">+</button>
+    <div class="morebook">
+        <h3>IF YOU WANT TO READ MORE BOOKS</h3>
+        <p><a href="https://openlibrary.org/">click here</a></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
